@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرپاک - خشکبار و حبوبات با کیفیت</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Vazir', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img.logo {
+            height: 60px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #C8102E;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4A7043;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x400?text=خشکبار+و+حبوبات+فرپاک') no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero h2 {
+            font-size: 3em;
+        }
+
+        .products {
+            padding: 50px;
+            text-align: center;
+            background: #fff;
+        }
+
+        .products h2 {
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #C8102E;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #f5f5f5;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            padding: 15px;
+            font-size: 1.2em;
+            color: #C8102E;
+        }
+
+        .product-card p {
+            padding: 0 15px 15px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .about {
+            background: #4A7043 url('https://via.placeholder.com/1200x300?text=خط+تولید+فرپاک') no-repeat center/cover;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .contact {
+            background: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #C8102E;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact button {
+            padding: 10px;
+            background: #C8102E;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+
+        .contact button:hover {
+            background: #4A7043;
+        }
+
+        .contact .map {
+            margin-top: 20px;
+            height: 200px;
+            background: #ddd url('https://via.placeholder.com/600x200?text=نقشه+فرپاک') no-repeat center/cover;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .products, .about, .contact {
+                padding: 20px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            .about p {
+                max-width: 100%;
+            }
+
+            .contact .map {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="لوگوی فرپاک" class="logo">
+        <nav>
+            <a href="#home">صفحه اصلی</a>
+            <a href="#products">محصولات</a>
+            <a href="#about">درباره ما</a>
+            <a href="#contact">تماس با ما</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>فرپاک، طعم طبیعت در هر دانه</h2>
+    </section>
+    <section id="products" class="products">
+        <h2>محصولات ما</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=پسته" alt="پسته">
+                <h3>پسته</h3>
+                <p>پسته تازه و باکیفیت از بهترین باغ‌ها</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=بادام" alt="بادام">
+                <h3>بادام</h3>
+                <p>بادام درختی با طعم بی‌نظیر</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=گردو" alt="گردو">
+                <h3>گردو</h3>
+                <p>گردوهای تازه و مغذی</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=فندق" alt="فندق">
+                <h3>فندق</h3>
+                <p>فندق باکیفیت برای میان‌وعده</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=میوه+خشک" alt="میوه خشک">
+                <h3>میوه خشک</h3>
+                <p>میوه‌های خشک‌شده طبیعی و سالم</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=عدس" alt="عدس">
+                <h3>عدس</h3>
+                <p>عدس تازه برای آشپزی شما</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=لوبیا" alt="لوبیا">
+                <h3>لوبیا</h3>
+                <p>لوبیا باکیفیت برای غذاهای سنتی</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=نخود" alt="نخود">
+                <h3>نخود</h3>
+                <p>نخود تازه و مغذی</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=کشمش" alt="کشمش">
+                <h3>کشمش</h3>
+                <p>کشمش شیرین و طبیعی</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300?text=تخمه" alt="تخمه">
+                <h3>تخمه</h3>
+                <p>تخمه آفتابگردان با طعم عالی</p>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>درباره فرپاک</h2>
+        <p>فرپاک با بیش از یک دهه تجربه در صنعت خشکبار و حبوبات، به عنوان برندی معتبر در ارائه محصولات طبیعی و باکیفیت شناخته شده است. ما با انتخاب بهترین مواد اولیه از مزارع و باغ‌های سراسر کشور و استفاده از فرآیندهای مدرن، تضمین می‌کنیم که هر بسته فرپاک، طعم اصیل طبیعت را به سفره شما بیاورد. ارزش‌های ما شامل کیفیت، پایداری و رضایت مشتری است.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>تماس با ما</h2>
+        <form>
+            <input type="text" placeholder="نام و نام خانوادگی" required>
+            <input type="email" placeholder="ایمیل" required>
+            <input type="tel" placeholder="شماره تماس" required>
+            <input type="text" placeholder="موضوع پیام" required>
+            <textarea placeholder="پیام شما" rows="5" required></textarea>
+            <button type="submit">ارسال پیام</button>
+        </form>
+        <div class="map">
+            <!-- اینجا می‌تونید کد iframe گوگل مپ رو با آدرس فرپاک جایگزین کنید -->
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 فرپاک - تمامی حقوق محفوظ است</p>
+    </footer>
+</body>
+</html>
